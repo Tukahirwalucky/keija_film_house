@@ -9,10 +9,10 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  SplashScreenState createState() => SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.black, // Background color of the splash screen
       body: Center(
         child: Image.asset(
-          'assets/images/logo.png', // Your splash screen logo image
+          'assets/images/Logo.jpg', // Your splash screen logo image
           height: 200, // Adjust size as needed
           fit: BoxFit.contain,
         ),

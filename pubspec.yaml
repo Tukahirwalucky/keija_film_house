@@ -13,6 +13,11 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   logger: ^1.3.0
+  video_player: ^2.5.0
+  carousel_slider: ^5.0.0
+  shared_preferences: ^2.2.2
+  image_picker: ^1.1.2
+  open_filex: ^4.3.2
 
 dev_dependencies:
   flutter_test:
@@ -23,7 +28,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/logo.png
+    - assets/images/logo.jpg
     - assets/images/brigde.jpg
     - assets/images/damalie.jpg
     - assets/images/sanyu.jpg
@@ -35,6 +40,18 @@ flutter:
     - assets/images/iwaju.jpg
     - assets/images/shaka.jpg
     - assets/images/dogstory.jpg
-
+    - assets/images/rolex.jpg
+    - assets/images/passenger.jpg
+    - assets/images/matron.jpg
+    - assets/images/nambi.jpg
+    - assets/images/sekukulu.jpg
+    - assets/images/hustle.jpg
+    - assets/images/losthope.jpg
+    - assets/images/christmastogether.jpg
+    - assets/images/meninsuits.jpg
+    - assets/images/sabotage.jpg
+    - assets/images/reflections.jpg
+    - assets/images/kalabanda.jpg
+    - assets/images/kikazimoto.jpg
   # Correctly declare the asset paths
   

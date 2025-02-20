@@ -5,10 +5,10 @@ class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
 
   @override
-  _SignUpPageState createState() => _SignUpPageState();
+  SignUpPageState createState() => SignUpPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class SignUpPageState extends State<SignUpPage> {
   // ignore: unused_field
   bool _accountCreated = false;
 
@@ -31,7 +31,7 @@ class _SignUpPageState extends State<SignUpPage> {
       // Navigate to HomeScreen after account creation
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) =>  const HomeScreen()),
       );
     });
   }
@@ -48,7 +48,7 @@ class _SignUpPageState extends State<SignUpPage> {
             children: [
               // Logo Section
               Image.asset(
-                'assets/images/logo.png',
+                'assets/images/Logo.jpg',
                 height: 100,
                 fit: BoxFit.contain,
               ),
@@ -172,7 +172,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: ElevatedButton(
                   onPressed: () => _createAccount(context),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(255, 250, 130, 1),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),

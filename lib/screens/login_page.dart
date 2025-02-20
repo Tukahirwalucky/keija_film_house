@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:keija_film_house/screens/signup_page.dart';
+import 'package:keija_film_house/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -11,6 +12,12 @@ class LoginScreen extends StatelessWidget {
       backgroundColor: Colors.green,
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+    // Navigate to HomeScreen after successful login
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const HomeScreen()),
+    );
   }
 
   void _navigateToSignUp(BuildContext context) {
@@ -33,7 +40,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               // Logo Section
               Image.asset(
-                'assets/images/logo.png', // Ensure this path matches your image location
+                'assets/images/Logo.jpg', // Ensure this path matches your image location
                 height: 100,
                 fit: BoxFit.contain,
               ),
@@ -102,7 +109,7 @@ class LoginScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => _login(context),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(255, 245, 156, 2),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
